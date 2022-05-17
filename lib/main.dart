@@ -4,6 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:posttest4_muhammadiqbalzamzami_1915016122/Profile.dart';
 import 'package:posttest4_muhammadiqbalzamzami_1915016122/home.dart';
 import 'package:posttest4_muhammadiqbalzamzami_1915016122/mapLocation.dart';
+import 'package:posttest4_muhammadiqbalzamzami_1915016122/splash.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "Wind Breaker",
       debugShowCheckedModeBanner: false,
-      home: const landingPage(),
+      home: Splash(),
     );
   }
 }

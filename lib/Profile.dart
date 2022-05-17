@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:posttest4_muhammadiqbalzamzami_1915016122/alert.dart';
 
 class Profile extends StatefulWidget {
   const Profile({Key? key}) : super(key: key);
@@ -243,18 +244,12 @@ class _ProfileState extends State<Profile> {
                         style: TextStyle(color: Colors.white),
                       ),
                       onPressed: () {
-                        setState(() {
-                          Nama = ControllNama.text;
-                          Umur = ControllUmur.text;
-                          Tinggi = ControllTinggi.text;
-                          Berat = ControllBerat.text;
-                          hapus();
-                        });
+                        CustomAlert(context, "Profil Telah Dibuat");
                       },
                     ),
                   ],
                 ),
-              )
+              ),
             ])
           ],
         ));
